@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Prueba</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale?=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de textos</title>
 </head>
 <body>
-  <h1>esto es un titulo</h1>
-  <img src="html5.png">
+    <header><h1 id="titulo"><strong>Encriptador de texto</strong></h1></header>
+    <main class="flex__container">
+        <div class="parte__uno">
+            <section class="dos__tercios">
+                <div>
+                    <img class="logo" src="./img/icono-alura.png" alt="Logo Alura">
+                    <img class="logo2" src="./img/Logo_One.png" alt="Logo One">
+                </div>
+                <textarea id="textoEntrada" class="text__input" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="alerta1"><img class="aviso_img" src="./img/aviso.png"><h4>Solo letras minúsculas y sin acento</h4></div>
+                <section class="botones">
+                    <button id="btnEncriptar" onclick="encriptar()" class="btn__encriptar" type="submit">Encriptar</button>
+                    <button onclick="desencriptar()" class="btn__desencriptar" type="submit">Desencriptar</button>
+                </section>
+             </section>
+        </div>
+        <section class="un__tercio">
+            <div id="imagen"><img class="imagen" alt="imagen encriptador" src="./img/munheco.png" size="500"></div>
+            <div id="salida" class="alerta2">Ningún mensaje fue encontrado</div>
+            <textarea id="textoSalida" class="text__input2" ></textarea>
+            <button id="btnCopiar" onclick="copiar()" class="btn__copiar" type="submit">Copiar</button>
+        </section>
+    </main>
+    <footer><h3 id="footer">Desarrollado por Francisco Valera</h3></footer>
 </body>
+<script src="code.js"></script>
 </html>
